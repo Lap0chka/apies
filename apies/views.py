@@ -31,7 +31,7 @@ def get_weather(request):
         response = requests.get('https://catfact.ninja/fact')
         data = response.json()
         cat_fact = data['fact']
-        response = requests.get('https://catfact.ninja/fact')
+        
 
     return render(request, 'apies/index.html', {'cat_fact': cat_fact})
 
